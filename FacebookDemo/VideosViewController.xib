@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideosViewController">
+            <connections>
+                <outlet property="swipeForMoreLabel" destination="ar3-MN-A8w" id="ige-S2-hHC"/>
+                <outlet property="videosScrollView" destination="JGP-wp-f8f" id="E47-JF-Kpd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="72adf455.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="74y-LQ-rt8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-vo-GAO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gd6-t5-gkT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-wp-f8f">
+                                <rect key="frame" x="0.0" y="125" width="600" height="350"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on video to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z30-nP-7KO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Daf-J3-4FE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Daf-J3-4FE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Daf-J3-4FE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Z30-nP-7KO" firstAttribute="leading" secondItem="gd6-t5-gkT" secondAttribute="leading" constant="8" id="B5X-bB-Urb"/>
+                            <constraint firstAttribute="trailing" secondItem="Z30-nP-7KO" secondAttribute="trailing" constant="8" id="DVA-A7-0b9"/>
+                            <constraint firstItem="JGP-wp-f8f" firstAttribute="leading" secondItem="gd6-t5-gkT" secondAttribute="leading" id="GAB-qL-lcD"/>
+                            <constraint firstAttribute="bottom" secondItem="JGP-wp-f8f" secondAttribute="bottom" constant="125" id="OR2-XC-JOK"/>
+                            <constraint firstItem="Z30-nP-7KO" firstAttribute="top" secondItem="JGP-wp-f8f" secondAttribute="bottom" constant="8" id="Uof-Tn-DYu"/>
+                            <constraint firstAttribute="centerX" secondItem="JGP-wp-f8f" secondAttribute="centerX" id="dIn-c5-CK5"/>
+                            <constraint firstAttribute="trailing" secondItem="JGP-wp-f8f" secondAttribute="trailing" id="dIo-7D-DLo"/>
+                            <constraint firstItem="JGP-wp-f8f" firstAttribute="top" secondItem="gd6-t5-gkT" secondAttribute="top" constant="125" id="kR3-JE-dcU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JGP-wp-f8f"/>
+                                <exclude reference="Z30-nP-7KO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GAB-qL-lcD"/>
+                                <exclude reference="OR2-XC-JOK"/>
+                                <exclude reference="dIn-c5-CK5"/>
+                                <exclude reference="dIo-7D-DLo"/>
+                                <exclude reference="kR3-JE-dcU"/>
+                                <exclude reference="B5X-bB-Urb"/>
+                                <exclude reference="DVA-A7-0b9"/>
+                                <exclude reference="Uof-Tn-DYu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JGP-wp-f8f"/>
+                                <include reference="Z30-nP-7KO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GAB-qL-lcD"/>
+                                <include reference="OR2-XC-JOK"/>
+                                <include reference="dIn-c5-CK5"/>
+                                <include reference="dIo-7D-DLo"/>
+                                <include reference="kR3-JE-dcU"/>
+                                <include reference="B5X-bB-Urb"/>
+                                <include reference="DVA-A7-0b9"/>
+                                <include reference="Uof-Tn-DYu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to see more videos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-MN-A8w">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Jcn-XV-v2u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Jcn-XV-v2u"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Jcn-XV-v2u"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JGP-wp-f8f" firstAttribute="top" secondItem="ar3-MN-A8w" secondAttribute="bottom" constant="27" id="3Jv-97-WtH"/>
+                <constraint firstAttribute="bottom" secondItem="iUr-vo-GAO" secondAttribute="bottom" id="9XD-l5-V4w"/>
+                <constraint firstItem="74y-LQ-rt8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B37-84-cQo"/>
+                <constraint firstAttribute="trailing" secondItem="74y-LQ-rt8" secondAttribute="trailing" id="Nz7-Y0-o4Z"/>
+                <constraint firstItem="iUr-vo-GAO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Vs5-8L-VE6"/>
+                <constraint firstAttribute="trailing" secondItem="iUr-vo-GAO" secondAttribute="trailing" id="YMT-jt-h8C"/>
+                <constraint firstAttribute="bottom" secondItem="74y-LQ-rt8" secondAttribute="bottom" id="bId-qn-X9M"/>
+                <constraint firstAttribute="trailing" secondItem="ar3-MN-A8w" secondAttribute="trailing" constant="8" id="eqa-gQ-2ad"/>
+                <constraint firstItem="ar3-MN-A8w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="flo-AS-D0H"/>
+                <constraint firstItem="iUr-vo-GAO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oa6-zU-sEQ"/>
+                <constraint firstItem="ar3-MN-A8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="pyr-ev-xSH"/>
+                <constraint firstAttribute="centerX" secondItem="ar3-MN-A8w" secondAttribute="centerX" id="sOE-lr-kEs"/>
+                <constraint firstItem="74y-LQ-rt8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tyh-e0-mUw"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ar3-MN-A8w"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="eqa-gQ-2ad"/>
+                    <exclude reference="flo-AS-D0H"/>
+                    <exclude reference="pyr-ev-xSH"/>
+                    <exclude reference="sOE-lr-kEs"/>
+                    <exclude reference="3Jv-97-WtH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ar3-MN-A8w"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="eqa-gQ-2ad"/>
+                    <include reference="flo-AS-D0H"/>
+                    <include reference="pyr-ev-xSH"/>
+                    <include reference="sOE-lr-kEs"/>
+                    <include reference="3Jv-97-WtH"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="299" y="395"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="72adf455.jpeg" width="2100" height="1400"/>
+    </resources>
+</document>

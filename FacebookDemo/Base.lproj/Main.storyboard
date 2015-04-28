@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="royal-enfield-wallpapers-1024x576.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ezB-p4-Uhe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <visualEffectView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-mQ-4Iw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NHl-8y-e1S">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNf-Et-ye7">
+                                            <rect key="frame" x="175" y="285" width="250" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="250" id="Otp-Hf-3xJ"/>
+                                                <constraint firstAttribute="height" constant="30" id="vbh-ZS-cxs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                            <state key="normal" title="Login With Facebook">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginWithFacebookAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pqq-EO-X1I"/>
+                                            </connections>
+                                        </button>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TNi-H9-n3t">
+                                            <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HNf-Et-ye7" firstAttribute="top" secondItem="TNi-H9-n3t" secondAttribute="bottom" constant="8" id="HfG-XW-LZU"/>
+                                        <constraint firstAttribute="centerX" secondItem="TNi-H9-n3t" secondAttribute="centerX" id="V0i-DM-Lyf"/>
+                                        <constraint firstAttribute="centerX" secondItem="HNf-Et-ye7" secondAttribute="centerX" id="sOp-eJ-eRs"/>
+                                        <constraint firstAttribute="centerY" secondItem="HNf-Et-ye7" secondAttribute="centerY" id="vFM-BU-gkZ"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="TNi-H9-n3t"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="V0i-DM-Lyf"/>
+                                            <exclude reference="HfG-XW-LZU"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="TNi-H9-n3t"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="V0i-DM-Lyf"/>
+                                            <include reference="HfG-XW-LZU"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fUx-mQ-4Iw" secondAttribute="trailing" id="AB3-9E-brb"/>
+                            <constraint firstItem="ezB-p4-Uhe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="EDk-7O-d3l"/>
+                            <constraint firstAttribute="trailing" secondItem="ezB-p4-Uhe" secondAttribute="trailing" id="OJ3-PD-3JA"/>
+                            <constraint firstAttribute="centerY" secondItem="ezB-p4-Uhe" secondAttribute="centerY" id="Q8q-Ac-XcZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fUx-mQ-4Iw" secondAttribute="bottom" id="Tq4-ht-Sbc"/>
+                            <constraint firstItem="fUx-mQ-4Iw" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="XQq-26-O8K"/>
+                            <constraint firstItem="ezB-p4-Uhe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Ybh-MU-oGx"/>
+                            <constraint firstAttribute="centerY" secondItem="fUx-mQ-4Iw" secondAttribute="centerY" id="jOW-ij-fVE"/>
+                            <constraint firstAttribute="centerX" secondItem="fUx-mQ-4Iw" secondAttribute="centerX" id="qdA-Fr-ujd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ezB-p4-Uhe" secondAttribute="bottom" id="v0o-yr-5xc"/>
+                            <constraint firstItem="fUx-mQ-4Iw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="v2k-B3-98G"/>
+                            <constraint firstAttribute="centerX" secondItem="ezB-p4-Uhe" secondAttribute="centerX" id="yqO-BX-cq8"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TNi-H9-n3t" id="2RA-8A-Zsh"/>
+                        <outlet property="loginWithFacebookButton" destination="HNf-Et-ye7" id="kr6-Yn-gOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="royal-enfield-wallpapers-1024x576.jpg" width="1024" height="576"/>
+    </resources>
+</document>
